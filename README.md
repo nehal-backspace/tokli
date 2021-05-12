@@ -1,5 +1,5 @@
 # tokli
-Blockchain based website where any can play games and win games to earn NFTs (non-fungible token) !!
+Blockchain based website where any one can play games and win that game to earn NFTs (non-fungible token) !!
 
 ## How it works?
 Don't think it's Rocket Science because it includes "Blockchain","Ethereum","Non-Fungible"...and other fancy words.
