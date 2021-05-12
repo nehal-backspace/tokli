@@ -1,0 +1,145 @@
+body {
+  background: inherit;
+}
+
+.wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 80%;
+  -webkit-filter: url("#filter");
+  filter: url("#filter");
+}
+
+.ball {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+}
+.ball:before {
+  background: #9e40af;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+}
+.ball:nth-child(1) {
+  -webkit-transform: translate(-66px);
+  transform: translate(-66px);
+  -webkit-animation: x-axis-lateral 2s infinite alternate ease-in-out;
+  animation: x-axis-lateral 2s infinite alternate ease-in-out;
+}
+.ball:nth-child(1):before {
+  -webkit-animation: y-axis-lateral 1s infinite 0.1s alternate ease-in-out;
+  animation: y-axis-lateral 1s infinite 0.1s alternate ease-in-out;
+}
+.ball:nth-child(2) {
+  -webkit-animation: x-axis 2s infinite alternate ease-in-out;
+  animation: x-axis 2s infinite alternate ease-in-out;
+}
+.ball:nth-child(2):before {
+  -webkit-animation: y-axis 1s infinite 0.5s alternate ease-in-out;
+  animation: y-axis 1s infinite 0.5s alternate ease-in-out;
+}
+.ball:nth-child(3) {
+  -webkit-transform: translate(66px, 78px);
+  transform: translate(66px, 78px);
+  -webkit-animation: x-axis-lateral 2s infinite alternate ease;
+  animation: x-axis-lateral 2s infinite alternate ease;
+}
+.ball:nth-child(3):before {
+  -webkit-animation: y-axis-lateral 1s infinite 0.4s alternate ease-in-out;
+  animation: y-axis-lateral 1s infinite 0.4s alternate ease-in-out;
+}
+
+@-webkit-keyframes x-axis {
+  0% {
+    -webkit-transform: translate(-96px);
+    transform: translate(-96px);
+  }
+  100% {
+    -webkit-transform: translate(96px);
+    transform: translate(96px);
+  }
+}
+
+@keyframes x-axis {
+  0% {
+    -webkit-transform: translate(-96px);
+    transform: translate(-96px);
+  }
+  100% {
+    -webkit-transform: translate(96px);
+    transform: translate(96px);
+  }
+}
+@-webkit-keyframes y-axis {
+  0% {
+    -webkit-transform: translateY(42px);
+    transform: translateY(42px);
+  }
+  100% {
+    -webkit-transform: translateY(-66px) scale(0.8);
+    transform: translateY(-66px) scale(0.8);
+    background: #b528c2;
+  }
+}
+@keyframes y-axis {
+  0% {
+    -webkit-transform: translateY(42px);
+    transform: translateY(42px);
+  }
+  100% {
+    -webkit-transform: translateY(-66px) scale(0.8);
+    transform: translateY(-66px) scale(0.8);
+    background: #b528c2;
+  }
+}
+@-webkit-keyframes x-axis-lateral {
+  0% {
+    -webkit-transform: translate(-36px);
+    transform: translate(-36px);
+  }
+  100% {
+    -webkit-transform: translate(36px);
+    transform: translate(36px);
+  }
+}
+@keyframes x-axis-lateral {
+  0% {
+    -webkit-transform: translate(-36px);
+    transform: translate(-36px);
+  }
+  100% {
+    -webkit-transform: translate(36px);
+    transform: translate(36px);
+  }
+}
+@-webkit-keyframes y-axis-lateral {
+  0% {
+    -webkit-transform: translateY(12px);
+    transform: translateY(12px);
+  }
+  100% {
+    -webkit-transform: translateY(-60px);
+    transform: translateY(-60px);
+    background: #b528c2;
+  }
+}
+@keyframes y-axis-lateral {
+  0% {
+    -webkit-transform: translateY(12px);
+    transform: translateY(12px);
+  }
+  100% {
+    -webkit-transform: translateY(-60px);
+    transform: translateY(-60px);
+    background: #b528c2;
+  }
+}

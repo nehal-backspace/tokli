@@ -1,0 +1,325 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Aref Ruqaa', serif;
+  font-weight: normal;
+  font-style: normal;
+  color:blanchedalmond; 
+  min-height: 100vh;
+ 
+}
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+  text-decoration: none;
+  outline: none;
+}
+a,
+a:focus,
+a:hover {
+  text-decoration: none;
+}
+
+i,
+span,
+a {
+  display: inline-block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.logo{
+  font-size: 3.5em;
+   color: rgba(255,102,0,0.73);
+}
+
+.navu{
+    
+    text-align: right;
+    margin-top: 3%;
+}
+.tokenpic{
+    height:450px;
+    width:450px;
+    margin: auto;
+    
+  }
+.gallery{
+  text-align: center;
+  color: aliceblue;
+  margin: 5% 0 4% 0;
+}
+
+.section{
+  border:1px solid aliceblue ;
+  padding: 3%;
+  width: 75%;
+  margin: auto;
+  cursor: pointer;
+}
+.arena{
+    text-align: center;
+}
+.info{
+   text-align: center;
+   margin:5% 0 5% 0;
+   font-family: Arial;
+   color:whitesmoke;
+}
+.thinline{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.151);
+}
+.keyreq{
+  font-family: Arial; color: aliceblue;text-align: right;
+
+}
+.btn{
+  text-decoration: none;
+  border: 2px solid hotpink;
+  position: relative;
+  overflow: hidden;
+  color: azure;
+  margin-top: 5%;
+  background-color: black;
+  border-radius: 15px;
+}
+.btn:hover {
+  box-shadow: 1px 1px 25px 10px hotpink;
+  color: aliceblue;
+}
+
+.btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    hotpink,
+    transparent
+  );
+  transition: all 650ms;
+}
+.btn:hover:before {
+  left: 100%;
+}
+/* -------------LOADING ----------- */
+.loading {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(3, 3, 3, 0.747);
+}
+.lds-ripple {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  margin-top: -40px;
+  margin-left: -40px;
+}
+.lds-ripple div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 6px solid rgb(255, 255, 255);
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+
+
+
+.testimonial-line li:nth-of-type(1) {
+  width: 43px;
+}
+.testimonial-line li:nth-of-type(2) {
+  width: 16px;
+}
+.testimonial-line li:nth-of-type(3) {
+  width: 11px;
+}
+.testimonial-line li:nth-of-type(4) {
+  width: 5px;
+}
+.testimonial-line li {
+  height: 4px;
+
+  background-color: rgba(255,102,0,0.73);
+  display: inline-block;
+  border-radius: 50px;
+  margin-right: 3px;
+}
+.testimonial-line{
+  margin-top: -13px;
+}
+@media (max-width: 767px) {
+  
+  .logo{
+    font-size: 2em;
+  }
+  .navu{
+      margin-top: 4%;
+  }
+  .arena h1{
+      font-size: 2em;
+  }
+  .arena h2{
+      font-size: 1.5em;
+  }
+  .tokenpic{
+    height:300px;
+    width:300px;
+    margin: auto;
+  }
+}
+
+
+
+/*===========================
+       10.FOOTER css 
+===========================*/
+.footer_area {
+  font-family: Helvetica, sans-serif,Arial;
+  margin-top: 10%;
+  background-color:#050505;
+  position: relative;
+  z-index: 9; }
+  .footer_area::before {
+    width: 33%;
+    height: 100%;
+    position: absolute;
+    content: '';
+    /* background-image: url(../images/footer-shape-left.png); */
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    opacity: 0.03; }
+  .footer_area::after {
+    width: 33%;
+    height: 100%;
+    position: absolute;
+    content: '';
+    /* background-image: url(../images/footer-shape-right.png); */
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    opacity: 0.03; }
+
+.footer_widget .footer_title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff; }
+
+.footer_content {
+  margin-top: 30px; }
+  .footer_content p {
+    color: #fff; }
+
+
+.footer_copyright_content p {
+    font-size: 16px;
+    color: #fff; }
+    @media (max-width: 767px) {
+    .footer_copyright_content p {
+      font-size: 13px;
+    }
+    }
+
+.footer_link {
+  width: 50%;
+  padding-left: 50px; }
+  @media (max-width: 767px) {
+    .footer_link {
+      padding-left: 0; 
+    } 
+    .yebhi,.footer_area{
+      font-size: 13px;
+    }
+    }
+  .footer_link .link {
+    padding-top: 15px; }
+    .footer_link .link li a {
+      font-size: 16px;
+      color: #fff;
+      margin-top: 15px;
+      -webkit-transition: all 0.3s ease-out 0s;
+      -moz-transition: all 0.3s ease-out 0s;
+      -ms-transition: all 0.3s ease-out 0s;
+      -o-transition: all 0.3s ease-out 0s;
+      transition: all 0.3s ease-out 0s; }
+      .footer_link .link li a:hover {
+        color: #d363f5d0; }
+
+
+.footer_copyright {
+  padding-bottom: 5px;
+  padding-top: 10px;
+  border-top: 2px solid rgba(245, 73, 73, 0.09); }
+
+.footer_social {
+  padding-top: 15px; }
+  .footer_social .social li {
+    display: inline-block;
+    margin-right: 10px; }
+    .footer_social .social li a {
+      width: 40px;
+      font-size: 21px;
+      height: 40px;
+      line-height: 44px;
+      text-align: center;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.08);
+      color: #fff;
+      -webkit-transition: all 0.3s ease-out 0s;
+      -moz-transition: all 0.3s ease-out 0s;
+      -ms-transition: all 0.3s ease-out 0s;
+      -o-transition: all 0.3s ease-out 0s;
+      transition: all 0.3s ease-out 0s; }
+      .footer_social .social li a:hover {
+        color: white;
+        background-color: hotpink; }
+

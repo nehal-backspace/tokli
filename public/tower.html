@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Tower building</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width,user-scalable=no">
+  <link rel="stylesheet" href="./css/tower.css" />
+  
+
+</head>
+<body>
+    
+    <div id="container">
+        <div id="game"></div>
+        <div id="score">0</div>
+        <div id="instructions">Click (or press the spacebar) to place the block</div>
+        <div class="game-over">
+            <h2>Game Over</h2>
+            <p>You did great, you're the best.</p>
+            <p>Click or press spacebar to continue</p> 
+        </div>
+        <div class="game-ready">
+            <div id="start-button">Score more than 22 to earn a NFT<br><small>click to start</small></div>
+            
+            <div></div>
+        </div>
+    </div>
+    <script>
+        if(!localStorage.getItem('mykey'))
+        {
+            alert("you have either pressed refresh button or back button and hence lost your key !! SorrY :(");
+            window.location.href="index.html";
+        }
+    </script>
+    <script src="https://threejs.org/build/three.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <script src="./js/tower.js"></script>
+</body>
+</html>
+
